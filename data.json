@@ -1,0 +1,45 @@
+{
+  "projectList": ["Agex"],
+  "actions" : ["Requirement", "Technical", "Scope", "Notes"],
+  "projects": {
+    "agex" : {
+      "active" : true,
+      "notifications" : {
+        "requirement": {
+          "channels": ["ak-website-design", "akurey-ssot"],
+          "people": ["skopper@akurey.com", "jabarboza@akurey.com"]
+        },
+        "technical": {
+          "channels": ["akurey-ssot"],
+          "people": ["kafay.ng@akurey.com"]
+        },
+        "scope": {
+          "channels": ["akurey-ssot"],
+          "people": ["jabarboza@akurey.com", "kafay.ng@akurey.com"]
+        },
+        "notes": {
+          "channels": ["akurey-ssot"],
+          "people": ["skopper@akurey.com", "kafay.ng@akurey.com"]
+        }
+      },
+      "extensions" : {
+        "github": {
+          "repository": "https://github.com/akurey/AK-Projects-Single-Source.git",
+          "projectFile" : "https://github.com/akurey/AK-Projects-Single-Source/blob/main/Slack-Application/project-slack-ssot.md",
+          "requirement": {
+            "section" : "## Requirement"
+          },
+          "technical": {
+            "section": "## Technical"
+          },
+          "scope": {
+            "section": "## Scope"
+          },
+          "notes": {
+            "section": "## Notes"
+          }
+        }
+      }
+    }
+  }
+}

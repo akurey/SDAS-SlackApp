@@ -1,0 +1,7 @@
+.vendor/
+.venv/
+dist/
+.serverless/
+
+.idea/
+.DS_Store
