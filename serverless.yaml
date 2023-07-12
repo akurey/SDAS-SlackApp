@@ -1,17 +1,12 @@
-service: serverless-akurey-source
+service: PUF-Slack
 frameworkVersion: '3'
-role: bolt_python_s3_storage
 provider:
   name: aws
-  runtime: python3.9
+  runtime: python3.10
   timeout: 30 # maximum of 30 second for api gateway
   environment:
     SLACK_SIGNING_SECRET: ${env:SLACK_SIGNING_SECRET}
     SLACK_BOT_TOKEN: ${env:SLACK_BOT_TOKEN}
-    SLACK_CLIENT_ID: ${env:SLACK_CLIENT_ID}
-    SLACK_CLIENT_SECRET: ${env:SLACK_CLIENT_SECRET}
-    SLACK_INSTALLATION_S3_BUCKET_NAME: ${env:SLACK_INSTALLATION_S3_BUCKET_NAME}
-    SLACK_STATE_S3_BUCKET_NAME: ${env:SLACK_STATE_S3_BUCKET_NAME}
 functions:
   slack:
     handler: app.handler

@@ -1,7 +1,22 @@
+## Dependenciens
 .vendor/
 .venv/
 dist/
 .serverless/
+aiohttp*/
+aiosignal*/
+async_timeout*/
+async_timeout*/
+attr*/
+bin/
+charset_normalizer*/
+frozenlist*/
+idna*/
+multidict*/
+slack/
+slack_bolt*/
+slack_sdk*/
+yarl*/
 
 .idea/
 .DS_Store
